@@ -1,0 +1,353 @@
+/**
+
+TABLE OF CONTENTS 
+1. global styles
+2. mobile menu button (open & closed)
+3. rules page styles
+
+
+
+
+**/
+
+/* global styles */
+body {
+    background-color: #F8F3EA;
+    font-family: miller-headline, serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;  
+    color: #55200C;
+}
+
+h1 {
+    font-family: amador, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+button {
+    font-style: italic;
+    border-radius: 31.25rem;
+    border: 1px solid #55200C;
+    font-family: miller-headline, sans-serif;
+    text-decoration: none;
+    color: #55200C;
+    cursor: hand;
+    cursor: pointer; 
+    background-color: #F8F3EA;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+button:focus {
+outline: revert;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul {
+    all: unset;
+}
+
+/* end of global styles */
+
+/* landing page styles */
+
+.container {
+    margin: 0.8rem;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.container h1 {
+    margin: 0 auto;
+    grid-column: span 3;
+}
+
+.hero_container {
+    grid-column: span 6;
+    padding: 2rem 0.8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_img_container img {
+    width: 100%;
+}
+
+.hero_content {
+    padding: 0 0.8rem;
+}
+
+.tarot_btn_container {
+    padding: 1.5rem 0;
+}
+
+.tarot_btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    border-radius: 31.25rem;
+    border: 1px solid #55200C;
+    font-family: miller-headline, sans-serif;
+    text-decoration: none;
+    color: #55200C;
+    cursor: hand;
+    cursor: pointer; 
+    background-color: #F8F3EA;
+    margin-bottom: 70px;
+}
+
+/* needed to put space between the contents inside tarot button */
+.button_content {
+    margin: 0 0.5rem;
+}
+
+/* mobile menu styles */
+
+.mobile_nav {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    border-top: solid 1px #55200C;
+    background-color:#EDFFCE;
+    padding: 0px;
+}
+
+#menu_btn {
+    display: flex;
+    flex-shrink: 0;
+    -moz-box-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.icon {
+    height: 1.5rem;
+    width: 100%;
+    display: inline-block;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-close {
+    display: none;
+}
+
+.mobile_menu_container {
+    display: none;
+}
+
+.mobile_menu.open {
+    display: block;
+}
+
+.MobileMenu.open .open_menu {
+    display: none;
+}
+
+.mobile_menu.open .icon-close {
+    display: block; 
+}
+
+.mobile_menu_container {
+    bottom: 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 12;
+    overflow-y: auto;
+    opacity: 1;
+    background-color:#EDFFCE;
+    scrollbar-width: none;
+}
+
+.mobile_menu {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.mobile_menu ul {
+    margin: auto 0;
+}
+
+.mobile_menu ul li a {
+    width: 100%;
+    justify-content: center;
+    font-size: 3rem;
+    color: #55200C;
+    padding: 2rem 0;
+}
+
+/* mobile menu styles end */
+
+/* rules page styles */
+
+.disclaimer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.disclaimer_container h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4125rem;
+    padding: 0.8rem;
+}
+
+.disclaimer_container p {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 0 1.2rem;
+    text-align: left;
+}
+
+.rules_container ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 0 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* rules page styles end */
+
+/* tarot page styles */
+
+.welcome_container h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem 1rem;
+    gap: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.04063rem;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    height: auto;
+}
+
+.room_container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0.8rem 0.8rem;
+    border-radius: 1.25rem;
+    border-top: 15px solid #EBB8D5; /* Adjusted to VW unit */
+    border-right: 15px solid #EBB8D5; /* Adjusted to VW unit */
+    border-left: 15px solid #EBB8D5; /* Adjusted to VW unit */
+    background: #EDFFCE;
+    width: 80vw; /* Adjusted to VW unit */
+    min-height: 40vh;
+    height: auto; /* Let the height adjust based on content */
+    margin: 0 auto;
+}
+
+.wall_display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #55200C; /* Adjusted to VW unit */
+    background: #EDFFCE;
+    width: 80vw; /* Adjusted to VW unit */
+    max-width: 16.5625rem;
+    min-height: 30vh;
+    height: auto; /* Let the height adjust based on content */
+    padding: 3rem;
+}
+
+.draw_btn {
+    padding: 1rem 2rem;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: row;
+    font-style: italic;
+    border-radius: 31.25rem;
+    border: 1px solid #55200C;
+    font-family: miller-headline, sans-serif;
+    text-decoration: none;
+    color: #55200C;
+    cursor: hand;
+    cursor: pointer; 
+    background-color: #F8F3EA;
+    margin-bottom: 70px;
+}
+
+/* tarot page styles end */
+
+
+/* media queries */
+
+@media (min-width: 700px) {
+
+    .hero_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30rem;
+        margin: 0 auto;
+    }
+
+    .hero_container img {
+        width: 100%;
+    }
+
+    .hero_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+}
